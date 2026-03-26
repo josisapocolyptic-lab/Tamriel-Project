@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Tamriel Interactive Map</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Map of Tamriel</h1>
+
+    <div class="map-container">
+        <img src="images/tamriel.jpg" alt="Tamriel Map" id="map">
+
+        <!-- Clickable regions -->
+        <div class="marker"
+            style="top: 286px; left: 345px;"
+            data-name="Cyrodiil"
+            data-info="The Imperial heartland and political center of Tamriel.">
+            <img src="images/quest-marker.png" alt="Cyrodiil marker">
+        </div>
+
+        <div class="marker"
+            style="top: 79px; left: 399px;"
+            data-name="Skyrim"
+            data-info="A cold northern province of mountains, mead halls, and ancient Nordic tradition.">
+            <img src="images/quest-marker.png" alt="Skyrim marker">
+        </div>
+
+        <div class="marker"
+            style="top: 436px; left: 300px;"
+            data-name="Valenwood"
+            data-info="The forest homeland of the Bosmer, shaped by the Green Pact.">
+            <img src="images/quest-marker.png" alt="Valenwood marker">
+        </div>
+
+        <div class="marker"
+            style="top: 204px; left: 240px;"
+            data-name="Hammerfell"
+            data-info="The desert homeland of the Redguards, known for warriors and vast arid landscapes.">
+            <img src="images/quest-marker.png" alt="Hammerfell marker">
+        </div>
+
+        <div class="marker"
+            style="top: 475px; left: 610px;"
+            data-name="Black Marsh"
+            data-info="A vast swampy region and homeland of the Argonians.">
+            <img src="images/quest-marker.png" alt="Black Marsh marker">
+        </div>
+
+        <div class="marker"
+            style="top: 485px; left: 413px;"
+            data-name="Elsweyr"
+            data-info="The homeland of the Khajiit, a land of deserts, grasslands, and moon-touched culture.">
+            <img src="images/quest-marker.png" alt="Elsweyr marker">
+        </div>
+
+        <div class="marker"
+            style="top: 114px; left: 218px;"
+            data-name="High Rock"
+            data-info="A province of Breton kingdoms, court intrigue, and magical scholarship.">
+            <img src="images/quest-marker.png" alt="High Rock marker">
+        </div>
+
+        <div class="marker"
+            style="top: 302px; left: 654px;"
+            data-name="Morrowind"
+            data-info="The homeland of the Dunmer, marked by volcanic terrain and ancient Great Houses.">
+            <img src="images/quest-marker.png" alt="Morrowind marker">
+        </div>
+
+        <div class="marker"
+            style="top: 534px; left: 105px;"
+            data-name="Summerset Isles"
+            data-info="The ancient island homeland of the Altmer, steeped in magic and tradition.">
+            <img src="images/quest-marker.png" alt="Summerset Isles marker">
+        </div>
+    </div>
+
+    <div id="tooltip" class="hidden">
+        <h2 id="tooltip-title"></h2>
+        <p id="tooltip-text"></p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
